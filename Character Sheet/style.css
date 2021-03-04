@@ -1,0 +1,91 @@
+body {
+    margin: auto;
+    width: 750px;
+}
+
+div {
+    display: inline-block;
+    margin: auto;
+    border: 3px solid blue;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+
+.sheet {
+    display: grid;
+    gap: 5px;
+    grid: 'logo name name' 
+          'logo pronouns pronouns' 
+          'body heart mind'
+          'description description description' 
+          'background background background'
+          'skills skills skills'
+          'inventory inventory inventory'
+          'bonds bonds bonds'
+          'relationships relationships relationships';
+    margin: auto;
+    border: 5px solid red;
+    width: 700px;
+    height: 100%;
+    background-color: darkgray;
+}
+
+.logo {
+    grid-area: logo;
+    height: 110px;
+}
+
+.name {
+    grid-area: name;
+    height: 60px;
+}
+
+.pronouns {
+    grid-area: pronouns;
+    height: 40px;
+}
+
+.description {
+    grid-area: description;
+    height: 150px;
+}
+
+.background {
+    grid-area: background;
+}
+
+.body {
+    grid-area: body;
+    height: 65px;
+}
+
+.heart {
+    grid-area: heart;
+    height: 65px;
+}
+
+.mind {
+    grid-area: mind;
+    height: 65px;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.inventory {
+    grid-area: inventory;
+}
+
+.bonds {
+    grid-area: bonds;
+}
+
+.relationships {
+    grid-area: relationships;
+}
+
+
+
