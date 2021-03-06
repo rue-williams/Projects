@@ -5,13 +5,13 @@ body {
     font-variant: small-caps; 
     color: #727272;
     margin: auto;
-    width: 750px;
 }
 
 h1 { 
     font-size: 55px; 
     font-weight: 400; 
     margin: auto;
+    display: inline-block;
 } 
 
 h3 { 
@@ -24,7 +24,12 @@ p {
     font-size: 14px; 
     font-weight: 400; 
     margin: auto;
-} 
+}
+
+img {
+    display: block;
+    margin: auto;
+}
 
 div {
     display: inline-block;
@@ -35,10 +40,13 @@ div {
 }
 
 input {
+    color: #727272;
     font-size: 35px; 
     font-weight: 100;
     width: 50px;
     height: 35px;
+    border-radius: 17px;
+    border:3px solid #727272;
 
 }
 
@@ -46,7 +54,7 @@ input {
     display: grid;
     grid: 'logo name name' 
           'logo pronouns pronouns' 
-          'body heart mind'
+          'stat stat stat'
           'description description description' 
           'background background background'
           'skills skills skills'
@@ -55,18 +63,20 @@ input {
           'relationships relationships relationships';
     margin: auto;
     border: 5px solid red;
-    width: 100%;
+    width: 750px;
     height: 100%;
 }
 
 .logo {
     grid-area: logo;
-    height: 110px;
+    height: 120px;
+    margin:10px auto 0px auto;
 }
 
 .name {
     grid-area: name;
-    height: 60px;
+    height: 40px;
+    width:450px;
     text-align: left;
     padding-left: 5px;
     line-height: 75px; 
@@ -76,7 +86,8 @@ input {
     grid-area: pronouns;
     height: 40px;
     text-align: left;
-    padding-left: 5px;
+    margin-top: 5px;
+    padding-left: 60px;
     line-height: 30px; 
     font-style: italic; 
 }
@@ -93,24 +104,43 @@ input {
 }
 
 .stat {
-    width: 237px;
-    height: 65px;
-    border: 5px solid #727272;
-    border-radius: 50px;
+    grid-area: stat;
     display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 85px;
     line-height: 50px; 
+    border-top: 3px solid;
+    border-bottom: 3px solid;
 }
 
 .body {
-    grid-area: body;
+    order: 1;
+    height: 65px;
+    width: 160px;
+    display: inline-block;
+    border: 5px solid #727272;
+    border-radius: 20px;
 }
 
 .heart {
-    grid-area: heart;
+    order: 2;
+    height: 65px;
+    width: 180px;
+    display: inline-block;
+    border: 5px solid #727272;
+    border-radius: 20px;
+
 }
 
 .mind {
-    grid-area: mind;
+    order: 3;
+    height: 65px;
+    width: 160px;
+    display: inline-block;
+    border: 5px solid #727272;
+    border-radius: 20px;
+
 }
 
 .skills {
