@@ -4,14 +4,18 @@
 <head>
 
     <title>Character Sheet</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
-    <script type="text/javascript" src="index.js"></script> 
-
 </head> 
 
 <body>
-
+    <script type="text/javascript" src="index.js"></script> 
+    <script>
+        function getTextArea() {
+            document.getElementById("descinput").value = "Fifth Avenue, New York City";
+        }
+    </script>
     <div class="sheet">
         <div class="logo"><img src="logo.png" alt="logo of a building above an open book"></div> 
         <div class="name"><h1>name</h1></div>
@@ -30,12 +34,51 @@
                 <input type="text" id="mind-stat" value="+2">
             </div>
         </div>
-        <div class="description"><h3>description</h3></div>
-        <div class="background"><h3>background</h3></div>
-        <div class="skills"><h3>skills</h3></div>
-        <div class="inventory"><h3>inventory</h3></div>
-        <div class="bonds"><h3>bonds</h3></div>
-        <div class="relationships"><h3>relationships</h3></div>
+        <div class="description">
+            <h3>description</h3>
+            <form>
+                <textarea id="descinput" name="descinput" rows="5" cols="75">
+                  Character description goes here.
+                </textarea>
+                <button onlclick="getTextArea()">"Save"</button>
+            </form>
+            <div id="descoutput">hello you</div>
+        </div>
+        <div class="background">
+            <h3>background</h3>
+            <form>
+                <textarea id="backinput" name="backinput" rows="5" cols="75">
+                  Character background goes here.
+                </textarea>
+                <input type="submit" value="Save">
+                <br>
+            </form>
+            <p id="backoutput"></p>
+        </div>
+        <div class="skills">
+            <h3>skills</h3>
+            <ul id="skills">
+                <li>Skill 1</li>
+            </ul>
+        </div>
+        <div class="inventory">
+            <h3>inventory</h3>
+            <ul id="inventory">
+                <li>Item 1</li>
+            </ul>
+        </div>
+        <div class="bonds">
+            <h3>bonds</h3>
+            <ul id="bonds">
+                <li>Bond 1</li>
+            </ul>
+        </div>
+        <div class="relationships">
+            <h3>relationships</h3>
+            <ul id="relationships">
+                <li>relationship 1</li>
+            </ul>
+        </div>
     </div>
 
 

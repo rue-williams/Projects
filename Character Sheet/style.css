@@ -34,20 +34,12 @@ img {
 div {
     display: inline-block;
     margin: auto;
-    height: 150px;
     width: 100%;
     text-align: center;
 }
 
-input {
-    color: #727272;
-    font-size: 35px; 
-    font-weight: 100;
-    width: 50px;
-    height: 35px;
-    border-radius: 17px;
-    border:3px solid #727272;
-
+form {
+    margin-bottom: 10px;
 }
 
 .sheet {
@@ -92,17 +84,6 @@ input {
     font-style: italic; 
 }
 
-.description {
-    grid-area: description;
-    height: 150px;
-    border: 3px solid blue;
-}
-
-.background {
-    grid-area: background;
-    border: 3px solid blue;
-}
-
 .stat {
     grid-area: stat;
     display: flex;
@@ -114,12 +95,23 @@ input {
     border-bottom: 3px solid;
 }
 
+.stat input {
+    color: #727272;
+    font-size: 35px; 
+    font-weight: 100;
+    width: 50px;
+    height: 35px;
+    border-radius: 17px;
+    border:3px solid #727272;
+
+}
+
 .body {
     order: 1;
     height: 65px;
     width: 160px;
     display: inline-block;
-    border: 5px solid #727272;
+    border: 3px solid;
     border-radius: 20px;
 }
 
@@ -128,7 +120,7 @@ input {
     height: 65px;
     width: 180px;
     display: inline-block;
-    border: 5px solid #727272;
+    border: 3px solid;
     border-radius: 20px;
 
 }
@@ -138,29 +130,48 @@ input {
     height: 65px;
     width: 160px;
     display: inline-block;
-    border: 5px solid #727272;
+    border: 3px solid;
     border-radius: 20px;
 
 }
 
+.description {
+    grid-area: description;
+    width: 740px;
+    border-bottom: 3px solid;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.background {
+    grid-area: background;
+    width: 740px;
+    border-bottom: 3px solid;
+    text-align: left;
+    padding-left: 10px;
+}
+
 .skills {
     grid-area: skills;
-    border: 3px solid blue;
+    border-bottom: 3px solid;
+    height: 150px;
 }
 
 .inventory {
     grid-area: inventory;
-    border: 3px solid blue;
+    border-bottom: 3px solid;
+    height: 150px;
 }
 
 .bonds {
     grid-area: bonds;
-    border: 3px solid blue;
+    border-bottom: 3px solid;
+    height: 150px;
 }
 
 .relationships {
     grid-area: relationships;
-    border: 3px solid blue;
+    height: 150px;
 }
 
 
